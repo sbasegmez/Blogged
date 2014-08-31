@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+	<xp:this.resources>
+		<xp:styleSheet href="/style.css"></xp:styleSheet>
+	</xp:this.resources>
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:callback
+			facetName="content"
+			id="callback1">
+		</xp:callback>
+		<xe:this.configuration>
+			<xe:oneuiApplication
+				placeBar="false"
+				titleBarName="Main-Child Demo: Event Participants Demo"
+				legalText="(c) 2014 Serdar Basegmez. Licensed under Apache License 2.0">
+				<xe:this.footerLinks>
+					<xe:basicContainerNode label="Follow Me...">
+						<xe:this.children>
+							<xe:basicLeafNode
+								label="LotusNotus Blog"
+								href="http://lotusnotus.com/en">
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Twitter - @sbasegmez"
+								href="http://twitter/sbasegmez">
+							</xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+					<xe:basicContainerNode label="Support OpenNTF">
+						<xe:this.children>
+							<xe:basicLeafNode
+								href="http://openntf.org"
+								label="OpenNTF Home Page">
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								href="http://collaborationtoday.info"
+								label="Collaboration Today">
+							</xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+				</xe:this.footerLinks>
+				<xe:this.bannerUtilityLinks>
+					<xe:userTreeNode></xe:userTreeNode>
+					<xe:loginTreeNode></xe:loginTreeNode>
+				</xe:this.bannerUtilityLinks>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>

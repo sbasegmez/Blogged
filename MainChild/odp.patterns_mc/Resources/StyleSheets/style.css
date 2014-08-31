@@ -1,0 +1,89 @@
+.participantListContainer {
+	border-top: 2px solid #808080;
+	margin-top:20px;
+}
+
+span.selectNamesContainer {
+	display:none;
+}
+
+div.actionContainer {
+	font-size:0.9em;
+	margin:10px;
+}
+
+div.actionContainer .lotusBtn {
+    padding: 3px 10px;
+}
+
+.personsWrapper > div {
+    min-height:20px;
+    margin:10px;
+    padding:5px 10px;
+    border:1px solid #F0F0F0;
+    
+}
+
+.personsWrapper.editable .personCard .cardField {
+    margin-left:16px
+}
+
+.personCardWrapper {
+    display:inline-block;
+    width: 200px;
+    border:1px solid #EEEEEE;
+    margin:4px 5px;
+    padding:4px 6px;
+    position:relative;
+}
+
+.personCard {
+}
+
+.personCard .cardField {
+    display:block;
+}
+
+.personCard .checkbox {
+	margin-left:-6px;
+    float:left;
+}
+
+.personCard img.indicator {
+	margin-left:5px;	
+	float:right;
+	opacity:0.35;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+	filter: alpha(opacity=35);
+	-khtml-opacity: 0.35;
+}
+
+.personCard:hover img.indicator {
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-khtml-opacity: 1;
+}
+
+.personCardWrapper.selected {
+    border:1px dashed #006699;
+}
+
+.personCardWrapper.new {
+    background-color:#FFFAE0;
+}
+
+.personCardWrapper.deleted .personCard {
+	background-color:#EEEEEE;
+	opacity:0.35;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+	filter: alpha(opacity=35);
+	-khtml-opacity: 0.35;
+}
+
+.undeleteAction {
+	position:absolute;
+	top: 50%;
+	margin-top:-8px;
+	right:25%;
+}

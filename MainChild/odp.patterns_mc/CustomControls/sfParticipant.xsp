@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	
+<xp:span styleClass="personCardWrapper #{person.cardProperties}">
+	<xp:span
+		rendered="#{person.deleted}"
+		styleClass="undeleteAction">
+		<xp:link
+			text="Undo"
+			id="link3">
+			<xp:eventHandler
+				event="onclick"
+				submit="true"
+				refreshMode="partial"
+				disableValidators="true"
+				refreshId="#{compositeData.refreshId}">
+				<xp:this.action><![CDATA[#{person.toggleDelete}]]></xp:this.action>
+			</xp:eventHandler>
+		</xp:link>
+	</xp:span>
+	<xp:span
+		id="personCard"
+		styleClass="personCard">
+		<xp:span
+			styleClass="checkbox"
+			rendered="#{compositeData.editable}">
+			<xp:checkBox
+				text=""
+				value="#{person.selected}"
+				id="checkBox1"
+				checkedValue="true"
+				uncheckedValue="false"
+				disableModifiedFlag="true">
+				<xp:eventHandler
+					event="onchange"
+					submit="false"
+					script="dojo.toggleClass('#{id:personCard}', 'selected')">
+				</xp:eventHandler>
+			</xp:checkBox>
+		</xp:span>
+		<xp:span styleClass="cardField name">
+			<xp:text
+				escape="true"
+				id="name1"
+				value="#{person.name}">
+			</xp:text>
+			<xp:image
+				styleClass="indicator"
+				rendered="#{person.lcvProvided}"
+				url="/lcv.png"
+				id="image1"
+				title="LCV has been provided...">
+			</xp:image>
+		</xp:span>
+	</xp:span>
+</xp:span>
+</xp:view>
