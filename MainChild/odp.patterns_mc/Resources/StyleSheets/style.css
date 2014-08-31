@@ -30,7 +30,7 @@ div.actionContainer .lotusBtn {
 
 .personCardWrapper {
     display:inline-block;
-    width: 200px;
+    width: 20%;
     border:1px solid #EEEEEE;
     margin:4px 5px;
     padding:4px 6px;
@@ -86,4 +86,5 @@ div.actionContainer .lotusBtn {
 	top: 50%;
 	margin-top:-8px;
 	right:25%;
+	z-index:10;
 }

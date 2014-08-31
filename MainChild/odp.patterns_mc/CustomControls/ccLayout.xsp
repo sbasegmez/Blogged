@@ -45,6 +45,16 @@
 					<xe:userTreeNode></xe:userTreeNode>
 					<xe:loginTreeNode></xe:loginTreeNode>
 				</xe:this.bannerUtilityLinks>
+				<xe:this.titleBarTabs>
+					<xe:basicLeafNode
+						label="Home Page"
+						href="/home.xsp">
+					</xe:basicLeafNode>
+					<xe:basicLeafNode
+						label="New Event"
+						href="/event.xsp">
+					</xe:basicLeafNode>
+				</xe:this.titleBarTabs>
 			</xe:oneuiApplication>
 		</xe:this.configuration>
 	</xe:applicationLayout>
