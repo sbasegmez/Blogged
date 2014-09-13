@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xp:panel id="wrapper">
+		<xp:this.dataContexts>
+			<xp:dataContext var="items">
+				<xp:this.value><![CDATA[#{javascript:var cached=viewScope.bcItems;
+if(cached==null) {
+	cached=viewScope.bcItems=bcs.getItems("");
+}
+
+return cached;}]]></xp:this.value>
+			</xp:dataContext>
+		</xp:this.dataContexts>
+		<hr style="margin:5px 0px;" />
+		<xp:repeat
+			id="repeat1"
+			rows="30"
+			value="#{items}"
+			var="item">
+			<xp:div style="background:url(#{item.icon}.png) no-repeat left center; padding:8px 0px 8px 40px;">
+				<xp:link
+					id="link1"
+					value="#{item.file?item.url:''}">
+					<xp:text
+						value="#{item.name}"
+						styleClass=""
+						tagName="h5"
+						style="margin:0px;">
+					</xp:text>
+					<xp:eventHandler
+						event="onclick"
+						submit="true"
+						rendered="#{item.folder}"
+						refreshMode="partial"
+						refreshId="wrapper">
+						<xp:this.action><![CDATA[#{javascript:viewScope.bcItems=bcs.getItems(item.id)}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:link>
+			</xp:div>
+			<hr style="margin:5px 0px;" />
+		</xp:repeat>
+		
+		<xp:section id="section1" header="DebugJson" initClosed="true">
+			<xp:text
+				escape="false"
+				id="computedField1"
+				value="#{viewScope.debugJson}"
+				rendered="true">
+			</xp:text></xp:section></xp:panel>
+</xp:view>

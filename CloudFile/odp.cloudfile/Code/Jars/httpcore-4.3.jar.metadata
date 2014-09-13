@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.1" replicaid="C2257D4D003023B8" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="196" sequence="2" unid="F3ECE03263A6CFB4C2257C5D005B826A">
+<created><datetime>20140111T183931,62+02</datetime></created>
+<modified><datetime dst="true">20140908T114549,08+03</datetime></modified>
+<revised><datetime>20140111T183931,79+02</datetime></revised>
+<lastaccessed><datetime dst="true">20140908T114549,08+03</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140908T114549,08+03</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Serdar Basegmez/O=developi</name></updatedby>
+<wassignedby><name>CN=Serdar Basegmez/O=developi</name></wassignedby>
+<item name="$TITLE"><text>httpcore-4.3.jar</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+<item name="$Flags"><text>34567Cg~,</text></item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<item name="$FileNames" sign="true"><text>httpcore-4.3.jar</text></item></note>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.1" replicaid="C2257D4D003023B8" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1fe" sequence="3" unid="9B17FEAB43775F9FC2257C610080AEFB">
+<created><datetime>20140116T012534,03+02</datetime></created>
+<modified><datetime dst="true">20140908T114549,34+03</datetime></modified>
+<revised><datetime>20140116T012544,92+02</datetime></revised>
+<lastaccessed><datetime dst="true">20140908T114549,34+03</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140908T114549,34+03</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Serdar Basegmez/O=developi</name></updatedby>
+<wassignedby><name>CN=Serdar Basegmez/O=developi</name></wassignedby>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+
+
+<item name="$MimeType" sign="true"><text>image/png</text></item>
+<item name="$FileModDT" sign="true"><datetime>20101114T054014,00+02</datetime></item>
+<item name="$ImageNames" sign="true"><text>db.png</text></item>
+<item name="$TITLE" sign="true"><text>appicon.png</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item></note>

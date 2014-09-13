@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:div styleClass="hero-unit">
+		<h1>Cloud File Service - Demo Time</h1>
+		<p class="text-info">Developing&#160;Social Applications series</p>
+
+	</xp:div>
+</xp:view>
